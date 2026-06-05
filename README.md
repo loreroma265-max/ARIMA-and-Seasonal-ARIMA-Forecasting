@@ -22,7 +22,30 @@ Monthly sales data from the US Census Bureau (FRED), covering January
 2. Create a virtual environment and install dependencies:
 3. Open `notebooks/sarima_analysis.ipynb` and run the cells in order
 
+## Textstack
+* numpy
+* matplotlib.pyplot
+* statsmodels.tsa.stattools as **adfuller**
+* statsmodels.api
+* pandas.tseries.offsets **DateOffset**
+
+
 ## Results
 
 The model achieves a MAPE of around 4.4% on a 24-month test period, 
 with a December 2026 sales forecast of approximately $7.7 billion.
+
+### Raw Series
+![raw series](outputs/01_raw_series.png)
+
+### Seasonal Difference
+![seasonal difference](outputs/02_seasonal_diff.png)
+
+### PACF
+![PACF](outputs/03_acf_pacf.png)
+
+### Forecast Vs Actual
+![Forecast vs Actual](outputs/04_forecast_vs_actual.png)
+
+### Future Forecast
+![Future Forecast](outputs/05_future_forecast.png)
